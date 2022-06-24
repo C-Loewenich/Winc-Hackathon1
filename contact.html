@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our life with a bicycles</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="first-a" href="index.html">Welcome</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="biketypes.html">Bike types</a></li>
+          <li><a class="selected" href="contact.html">Contact</a></li>
+        </ul>
+        <figure class="headerimage">
+          <img
+            src="images/phone bike.jpg"
+            alt="Man standing over his bike looking at his phone"
+          />
+          <h1>Request a call back</h1>
+        </figure>
+      </nav>
+    </header>
+    <main>
+      <form class="call_back" name="Contact" method="post" data-netlify="true">
+        <div class="container_p">
+          <p class="adjust_after_header">
+            Please enter the below details and we will call you back as
+            requested to discuss and advise you on how to find and buy the
+            bicycle that fits your needs
+          </p>
+        </div>
+        <div class="container_f">
+          <div class="form">
+            <div class="name h--highlight">
+              <input type="text" placeholder="Firstname" name="fname" />
+              <input type="text" placeholder="Lastname" name="lname" />
+            </div>
+            <div class="contact h--highlight">
+              <input type="text" placeholder="Telephone" name="tel" />
+              <input type="text" placeholder="Email" name="email" />
+            </div>
+            <div class="label">
+              <label for="date"
+                >Please select date and time for the call back!</label
+              >
+            </div>
+            <div class="date h--highlight">
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="time">
+              <div class="time_picker">
+                <input
+                  type="radio"
+                  id="morning"
+                  name="time_of_day"
+                  value="Morning"
+                />
+                <label for="morning">Morning</label>
+              </div>
+              <div class="time_picker">
+                <input
+                  type="radio"
+                  id="afternoon"
+                  name="time_of_day"
+                  value="Afternoon"
+                />
+                <label for="afternoon">Afternoon</label>
+              </div>
+              <div class="time_picker">
+                <input
+                  type="radio"
+                  id="evening"
+                  name="time_of_day"
+                  value="Evening"
+                />
+                <label for="evening">Evening</label>
+              </div>
+            </div>
+            <textarea
+              class="area"
+              name="message"
+              placeholder="Please let us know in a couple of words what you would like to talk to us about!"
+              id="message"
+              cols="45"
+              rows="7"
+            ></textarea>
+            <input class="submit" type="submit" value="Request call back" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">About the bike foundatoin</a></li>
+          <li>
+            <a href="mailto:contact@bikefoundation .com"
+              >Contact the bike foundation</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p>Copyright © The Bike Foundation. All rights reserved</p>
+    </footer>
+    <div class="sidebar_left"></div>
+    <div class="sidebar_right"></div>
+  </body>
+</html>
